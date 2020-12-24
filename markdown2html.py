@@ -12,7 +12,7 @@ if __name__ == "__main__":
     toks = sys.argv
 
     if len(toks) < 2:
-        eprint("Usage: ./markdown2html.py README.md README.html")
+        eprint("Usage: ./markdown2html.py README.md")
         exit(1)
 
     filename = toks[1]
