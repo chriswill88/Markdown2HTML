@@ -15,8 +15,9 @@ if __name__ == "__main__":
         eprint("Usage: ./markdown2html.py README.md README.html")
         exit(1)
 
-    for filename in toks[1:]:
-        if not os.path.exists(filename):
-            eprint("Missing {}".format(filename))
-            exit(1)
+    filename = toks[1]
+
+    if not os.path.exists(filename):
+        eprint("Missing <filename>")
+        exit(1)
     exit(0)
