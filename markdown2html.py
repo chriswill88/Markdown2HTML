@@ -4,6 +4,7 @@ import sys
 import os
 
 def eprint(*args, **kwargs):
+    """stderr print"""
     print(*args, file=sys.stderr, **kwargs)
 
 
