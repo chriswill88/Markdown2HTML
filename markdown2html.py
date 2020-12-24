@@ -18,6 +18,6 @@ if __name__ == "__main__":
     filename = toks[1]
 
     if not os.path.exists(filename):
-        eprint("Missing <filename>")
+        eprint("Missing {}".format(filename))
         exit(1)
     exit(0)
