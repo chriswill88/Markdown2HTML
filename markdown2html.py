@@ -11,7 +11,7 @@ def eprint(*args, **kwargs):
 if __name__ == "__main__":
     toks = sys.argv
 
-    if len(toks) < 2:
+    if len(toks) != 3:
         eprint("Usage: ./markdown2html.py README.md README.html")
         exit(1)
 
